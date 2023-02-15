@@ -1,0 +1,23 @@
+body{
+	background-color: #d90367c0;
+	/* background-image: url(../img/Cinema.jpg); */
+}
+
+.btn-outline-danger{
+	width: 100px;
+	line-height: 15px;
+	border: 2px #D90368 solid;
+}
+
+/* .btn-outline-danger:active, */
+/* .btn-outline-danger:visited, */
+.btn-outline-danger:hover{
+	background-color: #D90368;
+	border: 2px #D90368 solid;
+}
+
+.blur{
+	backdrop-filter: invert(30%);
+/* backdrop-filter: blur(50px); */
+z-index: 1;
+}
