@@ -19,13 +19,13 @@
       rel="shortcut icon"
       href="../assets/img/Drawing1-Model.svg"
       type="image/x-icon">
-    <title>Home</title>
+    <title>Details</title>
   </head>
 
   <body>
     <header class="d-flex justify-content-center flex-column">
       <nav class="navbar navbar-expand-md navbar-dark bd-navbar bg-dark">
-        <div class="container-fluid d-flex flex-wrap flex-md-nowrap">
+        <div class="container-xxl d-flex flex-wrap flex-md-nowrap">
           <figure class="my-0">
             <img
               src="../assets/img/Logo_Amazing_Events.png"
@@ -74,9 +74,7 @@
 
               <li
                 class="nav-item btn btn-outline-danger p-0 m-1 col-6 col-md-auto">
-                <a class="nav-link" href="past_events.html"
-                  >Past Events</a
-                >
+                <a class="nav-link" href="past_events.html">Past Events</a>
               </li>
 
               <li
@@ -94,23 +92,25 @@
       </nav>
 
       <!-- CAROUSEL -->
-      <div class="blur">
-        <div id="carouselExample" class="carousel slide">
+      <div class="bg-dark bg-gradient">
+        <div id="carouselExample" class="container-xxl carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <h2 class="text-center p-5 w-100">HOME</h2>
+              <h2 class="text-center p-5 text-light-emphasis">HOME</h2>
             </div>
             <div class="carousel-item">
-              <h2 class="text-center p-5 w-100 text-muted">UPCOMING EVENTS</h2>
+              <h2 class="text-center p-5 text-light-emphasis">
+                UPCOMING EVENTS
+              </h2>
             </div>
             <div class="carousel-item">
-              <h2 class="text-center p-5 w-100 text-muted">PAST EVENTS</h2>
+              <h2 class="text-center p-5 text-light-emphasis">PAST EVENTS</h2>
             </div>
             <div class="carousel-item">
-              <h2 class="text-center p-5 w-100 text-muted">CONTACT</h2>
+              <h2 class="text-center p-5 text-light-emphasis">CONTACT</h2>
             </div>
             <div class="carousel-item">
-              <h2 class="text-center p-5 w-100 text-muted">STATS</h2>
+              <h2 class="text-center p-5 text-light-emphasis">STATS</h2>
             </div>
           </div>
           <button
@@ -133,12 +133,41 @@
       </div>
     </header>
 
-    <main>
-    
+    <main class="container-fluid">
+      <div>
+        <div class="row d-flex justify-content-center my-5">
+          <div class="card text-center my-3 mb-3 text- my-3 col-8 p-0">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <img
+                  src="../assets/img/Costume_Party.jpg"
+                  class="img-fluid rounded w-100 h-100"
+                  alt="...">
+              </div>
+              <div class="col-lg-6">
+                <div class="card-body">
+                  <h5 class="card-title">Name</h5>
+                  <div class="card-text">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">date</li>
+                      <li class="list-group-item">description</li>
+                      <li class="list-group-item">category</li>
+                      <li class="list-group-item">place</li>
+                      <li class="list-group-item">capacity</li>
+                      <li class="list-group-item">assistance or estimate</li>
+                      <li class="list-group-item">Price: $ 000.00</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer
-      class="d-flex flex-wrap justify-content-around align-items-center py-3 my-4 bg-dark">
+      class="d-flex flex-wrap justify-content-around align-items-center py-3 mt-5 bg-dark">
       <div class="col-md-4 d-flex align-items-center">
         <p class="mb-3 mb-md-0 text-bg-dark fs-2">FE06-TN</p>
       </div>

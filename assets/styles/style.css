@@ -1,23 +1,32 @@
-body{
-	background-color: #d90367c0;
-	/* background-image: url(../img/Cinema.jpg); */
+body {
+  background-color: #d90367c0;
 }
 
-.btn-outline-danger{
-	width: 100px;
-	line-height: 15px;
-	border: 2px #D90368 solid;
+.btn-outline-danger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95px;
+  line-height: 15px;
+  border: 2px #d90368 solid;
 }
 
 /* .btn-outline-danger:active, */
 /* .btn-outline-danger:visited, */
-.btn-outline-danger:hover{
-	background-color: #D90368;
-	border: 2px #D90368 solid;
+.btn-outline-danger:hover {
+  background-color: #d90368;
+  border: 2px #d90368 solid;
 }
 
-.blur{
-	backdrop-filter: invert(30%);
-/* backdrop-filter: blur(50px); */
-z-index: 1;
+.blur {
+  background-color: #212529;
+}
+
+.hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px 5px #111111;
+}
+
+main{
+  min-height: 80vh;
 }

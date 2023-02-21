@@ -19,13 +19,13 @@
       rel="shortcut icon"
       href="../assets/img/Drawing1-Model.svg"
       type="image/x-icon">
-    <title>Home</title>
+    <title>Past Events</title>
   </head>
 
   <body>
     <header class="d-flex justify-content-center flex-column">
       <nav class="navbar navbar-expand-md navbar-dark bd-navbar bg-dark">
-        <div class="container-fluid d-flex flex-wrap flex-md-nowrap">
+        <div class="container-xxl d-flex flex-wrap flex-md-nowrap">
           <figure class="my-0">
             <img
               src="../assets/img/Logo_Amazing_Events.png"
@@ -74,9 +74,7 @@
 
               <li
                 class="nav-item btn btn-outline-danger p-0 m-1 col-6 col-md-auto">
-                <a class="nav-link" href="#"
-                  >Past Events</a
-                >
+                <a class="nav-link" href="#">Past Events</a>
               </li>
 
               <li
@@ -94,23 +92,25 @@
       </nav>
 
       <!-- CAROUSEL -->
-      <div class="blur">
-        <div id="carouselExample" class="carousel slide">
+      <div class="bg-dark bg-gradient">
+        <div id="carouselExample" class="container-xxl carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <h2 class="text-center p-5 w-100">HOME</h2>
+              <h2 class="text-center p-5 text-light-emphasis">HOME</h2>
             </div>
             <div class="carousel-item">
-              <h2 class="text-center p-5 w-100 text-muted">UPCOMING EVENTS</h2>
+              <h2 class="text-center p-5 text-light-emphasis">
+                UPCOMING EVENTS
+              </h2>
             </div>
             <div class="carousel-item">
-              <h2 class="text-center p-5 w-100 text-muted">PAST EVENTS</h2>
+              <h2 class="text-center p-5 text-light-emphasis">PAST EVENTS</h2>
             </div>
             <div class="carousel-item">
-              <h2 class="text-center p-5 w-100 text-muted">CONTACT</h2>
+              <h2 class="text-center p-5 text-light-emphasis">CONTACT</h2>
             </div>
             <div class="carousel-item">
-              <h2 class="text-center p-5 w-100 text-muted">STATS</h2>
+              <h2 class="text-center p-5 text-light-emphasis">STATS</h2>
             </div>
           </div>
           <button
@@ -133,12 +133,231 @@
       </div>
     </header>
 
-    <main>
-    
+    <main class="container">
+      <!-- FORMULARIO -->
+      <form class="my-5">
+        <div class="row">
+          <fieldset class="d-flex flex-wrap col-12 col-xl-8 mb-2 my-1">
+            <div class="form-check ms-2 mt-1 px-4">
+              <label class="form-check-label" for="category-1">
+                <input
+                  type="checkbox"
+                  name="category"
+                  class="form-check-input"
+                  value="category-1"
+                  id="category-1">
+                <span class="">Category 1</span>
+              </label>
+            </div>
+
+            <div class="form-check ms-2 mt-1 px-4">
+              <label class="form-check-label" for="category-2">
+                <input
+                  type="checkbox"
+                  name="category"
+                  class="form-check-input"
+                  value="category-2"
+                  id="category-2">
+                Category 2
+              </label>
+            </div>
+
+            <div class="form-check ms-2 mt-1 px-4">
+              <label class="form-check-label" for="category-3">
+                <input
+                  type="checkbox"
+                  name="category"
+                  class="form-check-input"
+                  value="category-3"
+                  id="category-3">
+                Category 3
+              </label>
+            </div>
+
+            <div class="form-check ms-2 mt-1 px-4">
+              <label class="form-check-label" for="category-4">
+                <input
+                  type="checkbox"
+                  name="category"
+                  class="form-check-input"
+                  value="category-4"
+                  id="category-4">
+                Category 4
+              </label>
+            </div>
+
+            <div class="form-check ms-2 mt-1 px-4">
+              <label class="form-check-label" for="category-5">
+                <input
+                  type="checkbox"
+                  name="category"
+                  class="form-check-input"
+                  value="category-5"
+                  id="category-5">
+                Category 5
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- busqueda -->
+          <div class="col-12 col-xl-4">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+              <button
+                type="submit"
+                class="input-group-text"
+                id="inputGroup-sizing-default">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <!-- tarjetas -->
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+          <article class="col">
+            <div class="card h-100">
+              <img
+                src="../assets/img/Cinema.jpg"
+                class="card-img-top h-75"
+                alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Natus necessitatibus ratione modi laborum labore consequuntur!
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-between">
+                <p class="m-2">Price: $000,00</p>
+                <a href="#" class="btn btn-outline-danger">
+                  See more
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col">
+            <div class="card h-100">
+              <img
+                src="../assets/img/Costume_Party.jpg"
+                class="card-img-top h-75"
+                alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Natus necessitatibus ratione modi laborum labore consequuntur!
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-between">
+                <p class="m-2">Price: $000,00</p>
+                <a href="#" class="btn btn-outline-danger">
+                  See more
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col">
+            <div class="card h-100">
+              <img
+                src="../assets/img/Food_Fair.jpg"
+                class="card-img-top h-75"
+                alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Natus necessitatibus ratione modi laborum labore consequuntur!
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-between">
+                <p class="m-2">Price: $000,00</p>
+                <a href="#" class="btn btn-outline-danger">
+                  See more
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col">
+            <div class="card h-100">
+              <img
+                src="../assets/img/Marathon.jpg"
+                class="card-img-top h-75"
+                alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Natus necessitatibus ratione modi laborum labore consequuntur!
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-between">
+                <p class="m-2">Price: $000,00</p>
+                <a href="#" class="btn btn-outline-danger">
+                  See more
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col">
+            <div class="card h-100">
+              <img
+                src="../assets/img/Museum_Tour.jpg"
+                class="card-img-top h-75"
+                alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Natus necessitatibus ratione modi laborum labore consequuntur!
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-between">
+                <p class="m-2">Price: $000,00</p>
+                <a href="#" class="btn btn-outline-danger">
+                  See more
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col">
+            <div class="card h-100">
+              <img
+                src="../assets/img/Music_Concert.jpg"
+                class="card-img-top h-75"
+                alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Natus necessitatibus ratione modi laborum labore consequuntur!
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-between">
+                <p class="m-2">Price: $000,00</p>
+                <a href="#" class="btn btn-outline-danger">
+                  See more
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
     </main>
 
     <footer
-      class="d-flex flex-wrap justify-content-around align-items-center py-3 my-4 bg-dark">
+      class="d-flex flex-wrap justify-content-around align-items-center py-3 mt-5 bg-dark">
       <div class="col-md-4 d-flex align-items-center">
         <p class="mb-3 mb-md-0 text-bg-dark fs-2">FE06-TN</p>
       </div>
