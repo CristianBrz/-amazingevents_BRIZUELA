@@ -180,29 +180,31 @@ const fragment = document.createDocumentFragment();
 
 function imprimirCards(array, contenedor) {
   for (let event of array) {
-    let div = document.createElement('article');
-    div.className = "col";
-    div.innerHTML += `
-      <div class="card h-100 hover">
-        <img
-          src="${event.image}"
-          class="card-img-top h-50"
-          alt="${event.name} image">
-        <div class="card-body">
-          <h5 class="card-title">${event.name}</h5>
-          <p class="card-text">${event.category}</p>
+    if(event.date > data.currentDate){  
+      let div = document.createElement('article');
+      div.className = "col";
+      div.innerHTML += `
+        <div class="card h-100 hover">
+          <img
+            src="${event.image}"
+            class="card-img-top h-50"
+            alt="${event.name} image">
+          <div class="card-body">
+            <h5 class="card-title">${event.name}</h5>
+            <p class="card-text">${event.category}</p>
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+            <p class="m-2">$ ${event.price}</p>
+            <a href="pages/details.html" class="btn btn-outline-danger">
+              See more
+            </a>
+          </div>
         </div>
-        <div class="card-footer d-flex justify-content-between">
-          <p class="m-2">$ ${event.price}</p>
-          <a href="pages/details.html" class="btn btn-outline-danger">
-            See more
-          </a>
-        </div>
-      </div>
-    `
-    fragment.appendChild(div);
+      `
+      fragment.appendChild(div);
+    };
+    contenedor.appendChild(fragment);
   };
-  contenedor.appendChild(fragment);
 
 
 };
