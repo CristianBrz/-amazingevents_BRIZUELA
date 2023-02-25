@@ -22,11 +22,17 @@ body {
   background-color: #212529;
 }
 
-.hover {
+.hover:hover {
   transform: scale(1.05);
   box-shadow: 5px 5px 15px 5px #111111;
+  transition-duration: 0.5s;
+  z-index: 1;
 }
 
 main{
   min-height: 80vh;
+}
+
+article{
+  height: 22rem;
 }
