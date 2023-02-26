@@ -180,7 +180,7 @@ const fragment = document.createDocumentFragment();
 
 function imprimirCards(array, contenedor) {
   for (let event of array) {
-    if(event.date > data.currentDate){  
+    if(event.date <  data.currentDate){  
       let div = document.createElement('article');
       div.className = "col";
       div.innerHTML += `
