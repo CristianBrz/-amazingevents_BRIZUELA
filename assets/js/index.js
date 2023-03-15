@@ -28,7 +28,7 @@ const imprimirCards = (array, contenedor) => {
                         
                         <div class="card-footer d-flex justify-content-between">
                           <p class="m-2">$ ${event.price}</p>
-                          <a href="pages/details.html" class="btn btn-outline-danger">
+                          <a href="pages/details.html?id=${event._id}" class="btn btn-outline-danger">
                           See more
                           </a>
                         </div>
@@ -77,7 +77,7 @@ const createCheckbox = (array, container) => {
                           class="form-check-input"
                           value="${category.toLowerCase()}"
                           id="${category.toLowerCase()}">
-                        <span class="">${category}</span>
+                        <span class="fw-semibold">${category}</span>
                       </label>
                     `;
     container.appendChild(div);

@@ -24,7 +24,7 @@ const data = {
       category: "Food Fair",
       place: "Room A",
       capacity: 45000,
-      assistance: 42756,
+      estimate: 42756,
       price: 10,
     },
     {
