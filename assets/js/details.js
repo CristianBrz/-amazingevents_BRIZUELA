@@ -12,9 +12,12 @@ const event = data.events.find((event) => event._id == id);
 
 console.log(event);
 
+const $back = document.getElementById("buttonBack");
+
+
 const eventDetail = (event, container) => {
   let div = document.createElement("article");
-  div.className = "row g-0";
+  div.className = "row g-0 heigthCard";
 
   const assistanceEstimate = event.hasOwnProperty("assistance")
     ? `<li class="list-group-item">Assistance: ${event.assistance} </li>`
@@ -49,4 +52,6 @@ const eventDetail = (event, container) => {
 
 eventDetail(event, $container);
 
-// <li class="list-group-item">Capacity: ${assistanceEstimate} </li>
+$back.addEventListener('click', () => {
+	window.history.back();
+});

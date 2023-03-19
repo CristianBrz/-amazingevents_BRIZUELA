@@ -149,12 +149,6 @@ const notFound = (container) => {
 $search.addEventListener("input", (e) => {
   let filterData = filterSearch($check, e.target.value);
 
-  console.clear();
-  console.log("filterData: ");
-  console.log(filterData);
-
-  // imprimirCards(filterData, $cards);
-
   if (filterData.length === 0) {
     console.log("dentro del if");
     notFound($cards);

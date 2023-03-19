@@ -46,3 +46,13 @@ article {
 /* .card > img {
   pointer-events: none;
 } */
+
+.heigthCard{
+  min-height: 395px;
+}
+
+.txtDec{
+  text-decoration: none;
+  color: #ffffff;
+;
+}
