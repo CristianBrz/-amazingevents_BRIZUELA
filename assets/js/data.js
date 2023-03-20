@@ -125,7 +125,7 @@ const data = {
       category: "Race",
       place: "New York",
       capacity: 3000000,
-      assistance: 2569800,
+      estimate: 2569800,
       price: 3,
     },
     {
@@ -181,4 +181,7 @@ const data = {
   ],
 };
 
+
+
 export default data;
+
